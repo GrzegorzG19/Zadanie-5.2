@@ -7,9 +7,7 @@ public class Device {
     String kod;
 
     public Device(String model, String company, String device, double price) {
-        this.model = model;
-        this.company = company;
-        this.device = device;
+        this(model, company, device);
         this.price = price;
 
     }
@@ -21,8 +19,8 @@ public class Device {
     }
 
     String getInfo(){
-         this.kod =("Kod: " + this.model +", Producent: "+ this.company+", typ: " + this.device + ", cena: "+ this.price);
-    return kod;
+        this.kod =("Kod: " + this.model +", Producent: "+ this.company+", typ: " + this.device + ", cena: "+ this.price);
+        return kod;
     }
 
 }
